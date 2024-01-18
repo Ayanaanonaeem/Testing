@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        input{
+            /* color: white; */
+             background-color: transparent ;
+           border-top:1px solid grey ;
+           border-left:1px solid grey  ;
+           border-right:1px solid grey ;
+         border-bottom: 1px solid white; 
+         
+         outline: none;
+         
+        }
+        input:hover{
+           
+            
+            border-bottom: 1px solid rgb(23, 7, 255);
+            
+            cursor: pointer;
+        }
+        input:focus{
+            background-color: grey;
+        }   
+        span:hover{
+            /* border-bottom: 1px solid rgb(65, 185, 221); */
+            color: rgb(0, 4, 255);
+            
+        }
+        label{
+            padding-right: 127px;
+            /* color: white; */
+        }
+        .box{
+            width: 170px;
+            height: 40px;
+            /* border: 3px solid black; */
+        }
+        .box:hover{
+           color: blue;
+        }
+        .box2{
+            width: 170px;
+            height: 70px;
+            /* border: 2px solid black; */
+        }
+        .box2 input{
+            padding-top: 44px;
+        }
+        .box2:hover{
+            color: blue;
+        }
+        .in input{
+            color: white;
+          background-color: rgb(0, 0, 255);
+          padding:3px 20px;
+          border-radius: 10px;
+          border: 2px solid black;
+        }
+        .in input:hover{
+           background-color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center>
+   <span>
+    <label for="" ><b>Name:</b></label>
+    <br>
+    <input type="text">
+</span>
+<br>
+<br>
+<div class="box">
+    <label for="" ><b>Email:</b></label>
+    <br>
+    <input type="email" name="" id="">
+</div>
+<br>
+<div class="box">
+    <label for="" ><b>Password:</b></label>
+    <br>
+    <input type="password" name="" id="">
+</div>
+<br>
+<div class="box">
+    <label for="" ><b>Number:</b></label>
+    <br>
+    <input type="text" name="" id="">
+</div>
+<br>
+<div class="box2">
+    <label class="t" for="" ><b>Message:</b></label>
+    <br>
+    <input type="text" name="" id="">
+</div>
+<br>
+<br>
+<span class="in">
+    <input type="submit" value="Submit">
+    <input type="Reset" value="Reset">
+</span>
+</center>
+</body>
+</html>
