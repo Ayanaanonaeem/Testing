@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+ <style>
+    *{
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .con{
+        display: flex;
+        gap: 20px;
+    }
+    .box{
+        width: 30%;
+        height: 100px;
+        /* background-color: aqua; */
+    }
+    .col{
+      background-color: white;
+    }
+    .card{
+      box-shadow: 10px 10px 11px black;
+    }
+    .head{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-image: linear-gradient(to top,rgb(0, 255, 179), yellow, blue); */
+        background-color: rgb(255, 255, 255);
+        height: 80px;
+        color:rgb(0, 0, 0);
+        text-align: center;
+    }
+    .card-text{
+      font-size: px;
+    }
+    @media (min-width:200px)and (max-width:500px) {
+      .text-bg-dark img{
+        height: 350px;
+      }
+    }
+    @media (max-width:800px) {
+      .box1{
+        display: none;
+      }
+      
+    }
+    .container-xxl{
+      background-color: rgb(31, 70, 128);
+      height: 400px;
+      display: flex;
+      justify-content: space-evenly;
+      color: white;
+      
+          }
+          .box1 ul li {
+            list-style: none;
+            
+          }
+          .box2 ul li {
+            list-style: none;
+          }
+          .box3 ul li {
+            list-style: none;
+          }
+          .copy{
+            background-color: black;
+            color: white;
+            text-align: center;
+          }
+ </style>
+</head>
+<body>
+  
+    <nav class="navbar navbar-expand-lg bg-body-tertiary " >
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="#">AAN Divers</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img  height="550px" src="https://images.unsplash.com/photo-1682687982502-1529b3b33f85?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img height="550px" src="https://plus.unsplash.com/premium_photo-1664298136378-ee0a66ee154b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img height="550px" src="https://images.unsplash.com/photo-1682686581030-7fa4ea2b96c3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+       <div class="head">
+        <h1>Popular Courses</h1>
+       </div>
+      
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+          
+        <div class="col">
+          <div class="card h-100 mx-4">
+            <img height="300px" src="https://images.unsplash.com/photo-1559076830-911d4a7dcd7d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Start your Scuba Diving Certification</h5>
+              <p class="card-text">Already a certified diver? Congratulations! An exciting journey lies ahead. Whether you want to be able to access more dive sites with an Advanced Open Water Diver certification, improve your skills or learn underwater photography, videography, fish identification, etc., we have the right course for you.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 1 month ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 mx-4">
+            <img height="300px" src="https://plus.unsplash.com/premium_photo-1661678244954-d1d766c00a57?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Start your Scuba Diving Career</h5>
+              <p class="card-text">Already a certified diver? Congratulations! An exciting journey lies ahead. Whether you want to be able to access more dive sites with an Advanced Open Water Diver certification, improve your skills or learn underwater photography, videography, fish identification, etc., we have the right course for you.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 2 month ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 mx-4">
+            <img height="300px" src="https://images.unsplash.com/photo-1579503475296-489bf078e9af?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Explore PADI Certification Levels</h5>
+              <p class="card-text">Already a certified diver? Congratulations! An exciting journey lies ahead. Whether you want to be able to access more dive sites with an Advanced Open Water Diver certification, improve your skills or learn underwater photography, videography, fish identification, etc., we have the right course for you.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 13 days ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <div class="card text-bg-dark mx-4">
+        <img src="https://images.unsplash.com/photo-1603370671351-ce85bc0ec91e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img" alt="...">
+        <div class="card-img-overlay">
+          <h5 class="card-title">AAN Divers</h5>
+          <p class="card-text">Whether you want to learn to scuba dive or you’re a certified scuba diver looking to continue your education, AAN digital scuba programs are the way to go. </p>
+          <p class="card-text"><small>Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <br>
+      <div class="container-xxl">
+        <div class="box1 my-auto">
+          <ul class="list-1">
+            <li>
+              Find a Dive Center or Resort</li>
+              <br>
+            <li>Replace Your Certification Card</li>
+            <br>
+            <li>Get Dive Insurance</li>
+            <br>
+            <li>Book a Scuba Vacation</li>
+            <br>
+            <li>Buy Branded Merchandise</li>
+            
+          </ul>
+        </div>
+        <div class="box2 my-auto">
+          <ul class="list-2">
+            <li>PADI SERVICES
+              Find a Dive Center or Resort</li>
+              <br>
+            <li>Replace Your Certification Card</li>
+            <br>
+            <li>Get Dive Insurance</li>
+            <br>
+            <li>Book a Scuba Vacation</li>
+            <br>
+
+            <li>Buy Branded Merchandise</li>
+            
+          </ul>
+        </div>
+        <div class="box3 my-auto">
+          <ul class="list-3">
+            <li>PADI SERVICES
+              Find a Dive Center or Resort</li>
+              <br>
+            <li>Replace Your Certification Card</li>
+            <br>
+            <li>Get Dive Insurance</li>
+            <br>
+            <li>Book a Scuba Vacation</li>
+            <br>
+            <li>Buy Branded Merchandise</li>
+            
+          </ul>
+        </div>
+        
+
+      </div>
+      <div class="copy">Made with love by Ayan ALL right reserved &copy;</div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
